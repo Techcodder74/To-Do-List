@@ -7,10 +7,23 @@
 
 </head>
 <body>
+    
     <header><h1>To-Do-List</h1></header>
     <div id="main">
     <section id="project">
+        <dialog id="projectdialog" >
+            <form id="projectForm">
+            <label for="projectBox">Project Name:</label>
+            <input type="text" id="projectBox" required>
+            <button type="submit">Create Project</button>
+            <button type="button" id="closeProjectDialog">Close</button>
+            </form>
+
+    </dialog>
+        <div id="projectHeader">
         <h2>Projects</h2>
+        <a id="addProject">+</a>
+        </div>
         <ul id="projects">
            
         </ul>
@@ -19,7 +32,20 @@
 
     </section>
     <section id="todoSection">
-        <h2 id="todo-header">Project 1</h2>
+        <dialog id="taskDialog" >
+            <form id="formId">
+                <label for="taskNameBox">Task Name</label>
+                <input type="text" id="taskNameBox" required>
+                 <label for="dueDateBox">Due Date:</label>
+                 <input type="date" id="dueDateBox" required>
+                 <br>
+                 <button type="submit">Create Task</button>
+                 <button type="button" id="cancelTaskButton">Cancel</button>
+
+            </form>
+
+        </dialog>
+        <div id=taskHeader><h2 id="todo-header">Project 1</h2> <button id="addTaskButton">Add Task</button></div>
         <div id="to-dos">
             <ul id="list">
                 <li class="completed"><div class="todolist"> <input type="checkbox">to-do1</div>

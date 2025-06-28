@@ -98,4 +98,182 @@ input[type="checkbox"]:checked::after {
     opacity: 0.5;
     background-color: #00d1e8;
 }
+/*Project Header*/
+#projectHeader{
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    align-items: center;
+}
+#addProject{
+    background-color: #00d1e8;
+    color:#675151;
+    font-size: 25px;
+    border-radius: 48%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-weight: 900;
+}
+/*Project Dialog*/
 
+#projectdialog {
+  background-color: #0f2027; 
+  color: #a8dadc;           
+  border: 2px solid #00d1e8; 
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  font-family: sans-serif;
+  box-shadow: 0 0 25px rgba(0, 209, 232, 0.3);
+}
+
+
+#projectForm label {
+  font-size: 16px;
+  color: #a8dadc;
+}
+
+
+#projectBox {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #00d1e8;
+  background-color: #1a3c40;
+  color: white;
+  font-size: 14px;
+}
+
+
+#projectForm button {
+  background-color: #00d1e8;
+  color: #0f2027;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  
+  font-size: 14px;
+}
+
+
+#projectForm button:hover {
+  background-color: #4cc3c7;
+  color: #121212;
+}
+
+
+#projectForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* Task Dialog Box */
+#taskDialog {
+  background-color: #0f2027;
+  color: #a8dadc;
+  border: 2px solid #00d1e8;
+  border-radius: 12px;
+  padding: 20px 25px;
+  width: 350px;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 209, 232, 0.3);
+}
+
+
+#formId {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+#formId label {
+  font-size: 15px;
+  color: #a8dadc;
+}
+
+
+#formId input[type="text"],
+#formId input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #00d1e8;
+  background-color: #1a3c40;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Bigger Calendar Icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url('https://cdn-icons-png.flaticon.com/512/747/747310.png') no-repeat center;
+  background-size: 20px 20px;
+  cursor: pointer;
+  opacity: 1;
+  filter: invert(100%);
+  width: 24px;
+  height: 24px;
+}
+
+/* Firefox support (less customization possible) */
+input[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(100%);
+  width: 24px;
+  height: 24px;
+}
+
+/* Buttons */
+#formId button {
+  background-color: #00d1e8;
+  color: #0f2027;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+}
+
+/* Button Hover */
+#formId button:hover {
+  background-color: #61c8cc;
+  color: #121212;
+}
+
+/* Layout for Create and Cancel buttons */
+#formId button[type="submit"],
+#cancelTaskButton {
+  width: fit-content;
+  align-self: flex-start;
+}
+
+
+/*Add Task Button*/
+#taskHeader{
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+}
+#addTaskButton{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #4cc3c7;
+    color: #feeaea;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
